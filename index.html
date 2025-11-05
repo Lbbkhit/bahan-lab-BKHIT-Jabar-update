@@ -57,9 +57,7 @@
       transform: scale(1.05);
       opacity: 0.9;
     }
-    .kh { background-color: #C68642; } /* coklat susu pekat */
-    .ki { background-color: #4682b4; } /* biru steel */
-    .kt { background-color: #228b22; } /* hijau */
+       .kt { background-color: #228b22; } /* hijau */
     .hidden { display: none; }
     #teamTitle {
       font-size: 22px;
@@ -82,11 +80,8 @@
 
   <!-- Menu Tim -->
   <div id="teamMenu" class="container">
-    <button class="btn kh" onclick="showForms('KH')">🐄 KH</button>
-    <button class="btn ki" onclick="showForms('KI')">🐟 KI</button>
-    <button class="btn kt" onclick="showForms('KT')">🌿 KT</button>
-  </div>
-
+   <button class="btn kt" onclick="showForms('KT')">🐄🐟🌿 KT</button> 
+      </div>
 
   <!-- Menu Form -->
   <div id="formMenu" class="container hidden">
@@ -108,29 +103,13 @@
 
   <script>
     const formLinks = {
-      KH: {
-        Pengadaan: "https://docs.google.com/forms/d/e/1FAIpQLSfXdIIvLdATaB_MJo7G0wwwfCH7LK3S4CWJVeSKbYkWild8ZQ/viewform?usp=header",
-        Pemakaian: "https://docs.google.com/forms/d/e/1FAIpQLScrT-ztuLPalecYMwk4Mc8Y0XsRu_fLQNDuxoaWkZpjpN7HfQ/viewform?usp=header",
-        Opsik: "https://docs.google.com/spreadsheets/d/1VVOfsATlGAE6os7rLpzGuvqUUg2aZ3wnurBgVJ18YL8/edit?usp=drive_link",
-        Stock: "https://docs.google.com/spreadsheets/d/1A9M57bQvk7ikcdgGGCRQKxgdeI_BqRRSSizmxYkx8Q4/edit?usp=sharing",
-        color: "#C68642",
-        icon: "🐄"
-      },
-      KI: {
-        Pengadaan: "https://docs.google.com/forms/d/e/1FAIpQLSfBhIAS4m46iBqpSuw_4LVWbE-G_874YKoAo43JYIq6D2yOPg/viewform?usp=header",
-        Pemakaian: "https://docs.google.com/forms/d/e/1FAIpQLSejy_NVcyJXDDcq9gUhXLOaiw-WIEeNzgnlet6oHfOg6EJCuw/viewform?usp=sharing&ouid=112029259114243838106",
-        Opsik: "https://docs.google.com/spreadsheets/d/1Gv5rx5LlqzHXrtF5aAQFjm4BGuXAhDB5fwULPIufCus/edit?usp=drive_link",
-        Stock: "https://docs.google.com/spreadsheets/d/12cbmgrDT1wV7Lh9m_TgfPqAmqjllWI-ZJ5KP2ZfDCo8/edit?usp=sharing",
-        color: "#4682b4",
-        icon: "🐟"
-      },
       KT: {
         Pengadaan: "https://docs.google.com/forms/d/e/1FAIpQLScIrmv-oq9h-LC65UyFGqcOWHv2fNUmy4VbtAHqpfWWqGbi4A/viewform?usp=header",
         Pemakaian: "https://docs.google.com/forms/d/e/1FAIpQLSer2L2kkVeSrYDlAZG8bXOBP9euGYGFgHQkMYDQlj9AN8E19g/viewform?usp=header",
         Opsik: "https://docs.google.com/spreadsheets/d/19I5NbfkQcFHGzLHRJLkzr95bXCToN_qMdUIqXVXdHK0/edit?usp=drive_link",
         Stock: "https://docs.google.com/spreadsheets/d/1NsOcuafgLwXSU_6k5cCmtWSQVK_ytrfj2m4MQsLTB5M/edit?usp=sharing",
         color: "#228b22",
-        icon: "🌿"
+        icon: "🐄🌿🐟"
       }
     };
 
@@ -173,6 +152,7 @@
   </script>
 </body>
 </html>
+
 
 
 
