@@ -10,8 +10,8 @@
       font-family: 'Poppins', sans-serif;
       background:
         linear-gradient(135deg, #1b4332, #2d6a4f),
-        url('https://i.ibb.co/MpGsP2T/lab-silhouette-pattern.png') bottom repeat-x;
-      background-size: cover, 300px;
+        url('https://i.ibb.co/XFMCp2G/lab-silhouette-strong.png') bottom repeat-x;
+      background-size: cover, 400px;
       color: white;
       display: flex;
       flex-direction: column;
@@ -39,19 +39,22 @@
       align-items: center;
       gap: 15px;
       margin-top: 30px;
+      z-index: 1;
     }
 
     button {
       background-color: #40916c;
       color: white;
       border: none;
-      padding: 15px 50px;
+      padding: 15px 0;
       border-radius: 12px;
       font-size: 1.1em;
       font-weight: 600;
       cursor: pointer;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
       transition: transform 0.2s, background-color 0.3s;
+      width: 250px; /* tombol seragam */
+      text-align: center;
     }
 
     button:hover {
@@ -63,6 +66,20 @@
       position: relative;
       z-index: 1;
       text-align: center;
+    }
+
+    /* Efek halus agar siluet tidak menutupi konten */
+    body::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 300px;
+      background: url('https://i.ibb.co/XFMCp2G/lab-silhouette-strong.png') bottom repeat-x;
+      background-size: 400px;
+      opacity: 0.25;
+      pointer-events: none;
     }
   </style>
 </head>
