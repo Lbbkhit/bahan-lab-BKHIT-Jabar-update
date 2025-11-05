@@ -27,9 +27,9 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 200px;
-      opacity: 0.25;
+      height: 220px;
       z-index: 0;
+      opacity: 0.3;
     }
 
     .logo {
@@ -83,28 +83,50 @@
   </style>
 </head>
 <body>
-  <!-- Siluet alat laboratorium -->
-  <svg class="siluet-lab" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" preserveAspectRatio="xMidYMax slice">
-    <g fill="white" opacity="0.25">
-      <!-- Tabung reaksi -->
-      <rect x="50" y="100" width="20" height="100" rx="5"/>
-      <!-- Beaker -->
-      <rect x="100" y="80" width="40" height="120" rx="5"/>
+  <!-- Siluet alat laboratorium semi-detail -->
+  <svg class="siluet-lab" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250" preserveAspectRatio="xMidYMax slice">
+    <g fill="white" opacity="0.3">
       <!-- Erlenmeyer -->
-      <path d="M200 80 L230 180 L170 180 Z"/>
-      <!-- Mikroskop sederhana -->
-      <circle cx="300" cy="140" r="25"/>
-      <rect x="290" y="160" width="20" height="40" rx="4"/>
-      <rect x="310" y="180" width="50" height="10"/>
-      <!-- Botol bulat -->
-      <circle cx="420" cy="130" r="30"/>
-      <rect x="410" y="70" width="20" height="60" rx="5"/>
+      <path d="M50 60 L85 200 H15 Z" />
+      <rect x="40" y="40" width="20" height="20" rx="4"/>
+      
+      <!-- Tabung reaksi -->
+      <rect x="120" y="60" width="15" height="120" rx="7"/>
+      <rect x="120" y="50" width="15" height="10" rx="7"/>
+      
+      <!-- Mikroskop -->
+      <path d="M220 120 h15 v40 h-15 z" />
+      <path d="M215 110 a10 10 0 0 1 20 0 v10 h-20z" />
+      <rect x="225" y="160" width="40" height="8" rx="2"/>
+      <rect x="240" y="140" width="10" height="25" rx="3"/>
+      <circle cx="230" cy="100" r="10"/>
+      
+      <!-- Cawan Petri -->
+      <ellipse cx="350" cy="180" rx="35" ry="10"/>
+      <ellipse cx="350" cy="170" rx="35" ry="10" fill="none" stroke="white" stroke-width="3" opacity="0.4"/>
+      
       <!-- Pipet -->
-      <rect x="520" y="90" width="10" height="90" rx="4"/>
-      <!-- Lab flask -->
-      <path d="M600 70 L620 180 L580 180 Z"/>
-      <!-- Beaker lain -->
-      <rect x="680" y="90" width="40" height="110" rx="5"/>
+      <rect x="440" y="100" width="8" height="70" rx="3"/>
+      <path d="M444 90 l5 10 h-10z" />
+      
+      <!-- Botol Reagen -->
+      <rect x="520" y="80" width="35" height="100" rx="6"/>
+      <rect x="530" y="60" width="15" height="25" rx="4"/>
+      <rect x="528" y="55" width="19" height="8" rx="4"/>
+      
+      <!-- Beaker -->
+      <rect x="620" y="90" width="50" height="110" rx="5"/>
+      <rect x="625" y="80" width="40" height="10" rx="2"/>
+      
+      <!-- Mikroskop kedua -->
+      <path d="M760 130 h15 v40 h-15 z" />
+      <circle cx="765" cy="115" r="10"/>
+      <rect x="765" y="160" width="40" height="8" rx="2"/>
+      <rect x="780" y="140" width="10" height="25" rx="3"/>
+      
+      <!-- Erlenmeyer besar -->
+      <path d="M880 50 L930 200 H830 Z" />
+      <rect x="870" y="35" width="20" height="15" rx="4"/>
     </g>
   </svg>
 
